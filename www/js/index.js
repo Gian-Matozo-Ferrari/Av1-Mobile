@@ -14,12 +14,15 @@ function testar() {
     } else {
         res.innerHTML = 'O primeiro número não é primo';
     }
+    if(num2 != 0){
     res1.innerHTML = `A soma de ${num1} + ${num2} = ${num1 + num2}` + `</br></br>` + 
     `A subtração de ${num1} - ${num2} = ${num1 - num2}` + `</br></br>` +
     `A divisão de ${num1} / ${num2} = ${num1 / num2}` + `</br></br>` + 
     `A multiplicação de ${num1} x ${num2} = ${num1 * num2}` + `</br></br>` + 
     `A sobra da divisão de ${num1} % ${num2} = ${num1 % num2}` + `</br></br>`;
-    
+    } else{
+        res1.innerHTML = "Digite valores válidos."
+    }
 }
 
 function limpa() {
